@@ -1,3 +1,5 @@
+import { SectionWrapper } from "@/components/SectionWrapper";
+
 const skills = [
   "Python",
   "JavaScript",
@@ -18,7 +20,7 @@ const skills = [
 export function Skills() {
   return (
     <section id="skills" className="bg-slate-950 px-6 py-24 text-white">
-      <div className="mx-auto max-w-6xl">
+      <SectionWrapper className="mx-auto max-w-6xl">
         <p className="mb-3 text-sm font-medium uppercase tracking-widest text-sky-400">
           Skills
         </p>
@@ -37,7 +39,7 @@ export function Skills() {
             </div>
           ))}
         </div>
-      </div>
+      </SectionWrapper>
     </section>
   );
 }

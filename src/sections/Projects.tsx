@@ -1,10 +1,11 @@
+import { SectionWrapper } from "@/components/SectionWrapper";
 import { projects } from "@/data/projects";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 export function Projects() {
   return (
     <section id="projects" className="bg-slate-900 px-6 py-24 text-white">
-      <div className="mx-auto max-w-6xl">
+      <SectionWrapper className="mx-auto max-w-6xl">
         <p className="mb-3 text-sm font-medium uppercase tracking-widest text-sky-400">
           Projects
         </p>
@@ -62,7 +63,7 @@ export function Projects() {
             </article>
           ))}
         </div>
-      </div>
+      </SectionWrapper>
     </section>
   );
 }

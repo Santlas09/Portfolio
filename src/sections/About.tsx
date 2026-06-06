@@ -1,7 +1,9 @@
+import { SectionWrapper } from "@/components/SectionWrapper";
+
 export function About() {
   return (
     <section id="about" className="bg-slate-900 px-6 py-24 text-white">
-      <div className="mx-auto max-w-6xl">
+      <SectionWrapper className="mx-auto max-w-6xl">
         <p className="mb-3 text-sm font-medium uppercase tracking-widest text-sky-400">
           About Me
         </p>
@@ -16,7 +18,7 @@ export function About() {
           building useful software, working with databases, and solving problems
           through clean and organized code.
         </p>
-      </div>
+      </SectionWrapper>
     </section>
   );
 }

@@ -1,9 +1,10 @@
+import { SectionWrapper } from "@/components/SectionWrapper";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export function Contact() {
   return (
     <section id="contact" className="bg-slate-900 px-6 py-24 text-white">
-      <div className="mx-auto max-w-6xl">
+      <SectionWrapper className="mx-auto max-w-6xl">
         <p className="mb-3 text-sm font-medium uppercase tracking-widest text-sky-400">
           Contact
         </p>
@@ -53,7 +54,7 @@ export function Contact() {
             </p>
           </a>
         </div>
-      </div>
+      </SectionWrapper>
     </section>
   );
 }

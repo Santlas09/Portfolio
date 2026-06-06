@@ -1,9 +1,10 @@
+import { SectionWrapper } from "@/components/SectionWrapper";
 import { FaAward } from "react-icons/fa";
 
 const achievements = [
   {
     title: "Second Place — Desafío X-Pro",
-    organization: "X-Pro",
+    organization: "X-Pro — Balloon Latam",
     description:
       "Recognized with second place in the Desafío X-Pro, an academic innovation challenge focused on solving real-world problems through teamwork, research, and project development.",
     date: "2026",
@@ -13,7 +14,7 @@ const achievements = [
 export function Achievements() {
   return (
     <section id="achievements" className="bg-slate-950 px-6 py-24 text-white">
-      <div className="mx-auto max-w-6xl">
+      <SectionWrapper className="mx-auto max-w-6xl">
         <p className="mb-3 text-sm font-medium uppercase tracking-widest text-sky-400">
           Achievements
         </p>
@@ -48,7 +49,7 @@ export function Achievements() {
             </article>
           ))}
         </div>
-      </div>
+      </SectionWrapper>
     </section>
   );
 }

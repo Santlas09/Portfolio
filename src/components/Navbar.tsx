@@ -10,6 +10,7 @@ export function Navbar() {
           <a href="#about" className="hover:text-sky-400">About</a>
           <a href="#skills" className="hover:text-sky-400">Skills</a>
           <a href="#projects" className="hover:text-sky-400">Projects</a>
+          <a href="#achievements" className="hover:text-sky-400">Achievements</a>
           <a href="#contact" className="hover:text-sky-400">Contact</a>
         </div>
       </nav>

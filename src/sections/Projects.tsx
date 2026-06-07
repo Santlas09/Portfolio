@@ -39,27 +39,31 @@ export function Projects() {
                 ))}
               </div>
 
-              <div className="mt-6 flex gap-4 text-slate-400">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`View ${project.title} on GitHub`}
-                >
-                  <FaGithub className="transition hover:text-white" />
-                </a>
+              {(project.github || project.demo) && (
+                <div className="mt-6 flex gap-4 text-slate-400">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View ${project.title} on GitHub`}
+                    >
+                      <FaGithub className="transition hover:text-white" />
+                    </a>
+                  )}
 
-                {project.demo !== "#" && (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`View ${project.title} live demo`}
-                  >
-                    <FaExternalLinkAlt className="transition hover:text-white" />
-                  </a>
-                )}
-              </div>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View ${project.title} live demo`}
+                    >
+                      <FaExternalLinkAlt className="transition hover:text-white" />
+                    </a>
+                  )}
+                </div>
+              )}
             </article>
           ))}
         </div>

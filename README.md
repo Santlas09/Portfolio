@@ -27,47 +27,6 @@ This portfolio presents my background as a Systems Engineering student and devel
 * Framer Motion
 * React Icons
 
-## Project Structure
-
-```txt
-src/
-├── app/
-├── components/
-│   ├── Footer.tsx
-│   ├── Navbar.tsx
-│   └── SectionWrapper.tsx
-├── data/
-│   └── projects.ts
-└── sections/
-    ├── About.tsx
-    ├── Achievements.tsx
-    ├── Contact.tsx
-    ├── Hero.tsx
-    ├── Projects.tsx
-    └── Skills.tsx
-```
-
-## How to Run Locally
-
-```bash
-git clone https://github.com/Santlas09/portfolio.git
-cd portfolio
-npm install
-npm run dev
-```
-
-Open the project in your browser:
-
-```txt
-http://localhost:3000
-```
-
-## Build for Production
-
-```bash
-npm run build
-```
-
 ## Contact
 
 * GitHub: https://github.com/Santlas09
